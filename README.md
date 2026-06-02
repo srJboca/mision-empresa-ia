@@ -1,7 +1,3 @@
-Aquí tienes el documento completo y actualizado, integrando esta última fase. Es un cierre espectacular para el taller, ya que les permite a los directivos ver cómo la IA no solo les ayudó a pensar y construir, sino también a **comunicar y vender** su proyecto de forma autónoma.
-
----
-
 # Guía Ejecutiva: Construcción de una Startup con Inteligencia Artificial
 
 ## **Proyecto Océano Azul - Manual del Participante**
@@ -41,8 +37,7 @@ Vamos a usar la IA para escuchar su reunión, organizar sus ideas y preparar la 
 
 4. **Acción Clave:** Copien el prompt final (el que está entre comillas) que la IA les acaba de entregar. Ese es su pasaporte a la siguiente fase.
 
-> `[Espacio para imagen: Captura de pantalla de Gemini mostrando dónde se hace clic para subir un archivo de audio y cómo pegar el prompt]`
-
+![Screenshot](./imagenes/img1.png)
 ---
 
 ## **Fase 2: El Analista de Mercado (15 Minutos)**
@@ -59,7 +54,14 @@ Ahora lanzaremos el motor de investigación profunda basándonos exactamente en 
 3. Peguen el prompt que copiaron al final de la Fase 1 y presionen Enter.
 4. **El Data Room (Acción Clave):** Una vez que Gemini termine la investigación exhaustiva y les entregue el reporte, expórtenlo a Google Docs (ícono de exportar al final de la respuesta) o guárdenlo como PDF. Este documento robusto es su "Data Room" y lo necesitarán para el siguiente paso.
 
-> `[Espacio para imagen: Captura de pantalla señalando dónde se activa el modo Deep Research y el botón de exportar el resultado en Gemini]`
+Inicia la investigación
+![Screenshot](./imagenes/deep-research.png)
+
+Espera a que todo termine
+![Screenshot](./imagenes/deep-research2.png)
+
+Exportalo a google docs
+![Screenshot](./imagenes/deep-research3.png)
 
 ---
 
@@ -76,6 +78,9 @@ Es hora de cruzar los datos de su investigación para encontrar la verdadera opo
 2. En la pantalla de fuentes (Sources), suban el documento (PDF o Google Doc) que guardaron en la Fase 2.
 3. En la barra de chat inferior, hagan la siguiente pregunta para extraer el "insight" de negocio:
 
+Carga el PDF a NotebookLM
+![Screenshot](./imagenes/notebooklm1.png)
+
 > **Prompt 1 (Copiar y Pegar):**
 > *"Basado EXCLUSIVAMENTE en los documentos cargados: ¿Cuál es el vacío competitivo más grande o el problema más costoso que los competidores actuales están ignorando? Redacta este hallazgo como un 'Problem Statement' de un solo párrafo."*
 
@@ -86,7 +91,7 @@ Es hora de cruzar los datos de su investigación para encontrar la verdadera opo
 
 5. **Decisión Directiva:** Lean las 3 opciones. Como equipo, elijan **una**.
 
-> `[Espacio para imagen: Captura de pantalla de NotebookLM resaltando el botón para cargar fuentes (Add Source) y la barra de chat inferior]`
+![Screenshot](./imagenes/notebooklm3.png)
 
 ---
 
@@ -105,6 +110,8 @@ Ya tienen el "qué". Ahora vamos a definir el "cómo" ganarán dinero.
 > **Prompt 1 (Copiar y Pegar):**
 > *"Actúa como un estratega de negocios corporativo. Vamos a fundar una startup que resuelve este problema: [Pegar el Problem statement de NotebookLM] usando esta solución: [Pegar la solución que eligieron]. Redacta nuestro Business Model Canvas detallado. Además, propón una estrategia de 'Pricing' para los primeros 12 meses y estima cómo deberíamos medir nuestro Costo de Adquisición de Cliente (CAC)."*
 
+![Screenshot](./imagenes/problem-statement.png)
+
 3. Ahora, preparen el terreno para la identidad visual de la empresa:
 
 > **Prompt 2 (Copiar y Pegar):**
@@ -112,7 +119,7 @@ Ya tienen el "qué". Ahora vamos a definir el "cómo" ganarán dinero.
 
 4. **Decisión Directiva:** Elijan el nombre de la empresa y copien el Prompt en inglés que generó Gemini.
 
-> `[Espacio para imagen: Captura de pantalla de un Business Model Canvas generado en texto, mostrando cómo Gemini estructura la información]`
+![Screenshot](./imagenes/nombres-prompt.png)
 
 ---
 
@@ -121,7 +128,7 @@ Ya tienen el "qué". Ahora vamos a definir el "cómo" ganarán dinero.
 Vamos a darle una imagen corporativa al proyecto.
 
 * **Herramienta:** Pomelli
-* **URL:** [Insertar URL de Pomelli habilitada para el taller]
+* **URL:** [https://labs.google.com/pomelli](https://labs.google.com/pomelli)
 
 **Paso a Paso:**
 
@@ -129,9 +136,26 @@ Vamos a darle una imagen corporativa al proyecto.
 2. Busquen el área de generación de marca o logotipo (la caja de texto principal).
 3. Peguen el Prompt en inglés que Gemini les entregó en la Fase 4, asegurándose de incluir el nombre que eligieron para su empresa.
 4. Hagan clic en Generar.
-5. Descarguen el logotipo y anoten la paleta de colores.
+5. Descarguen el brand book que Pomelli generó para ustedes.
 
-> `[Espacio para imagen: Captura de pantalla de la interfaz de Pomelli, indicando la caja de texto donde se debe insertar el prompt y el botón de generar]`
+Ingreso
+![Screenshot](./imagenes/pomelli.png)
+
+Agregar el prompt
+![Screenshot](./imagenes/pomelli2.png)
+
+Seleccionar la opción
+![Screenshot](./imagenes/pomelli3.png)
+
+Producir la marca
+![Screenshot](./imagenes/pomelli4.png)
+
+Descargar la marca
+![Screenshot](./imagenes/pomelli5.png)
+
+Aquí pueden ver un ejemplo del manual de marca generado para mi proyecto 
+
+[Ejemplo del manual de marca](https://labs.google.com/pomelli/brand_book/9pPzBI8MfYD0ET9EjrjkdF)
 
 ---
 
@@ -148,11 +172,25 @@ Vamos a crear la pantalla principal (Interfaz de Usuario) de su producto de soft
 2. En la caja de instrucciones, peguen el siguiente texto, adaptándolo con su información:
 
 > **Prompt (Copiar y Pegar):**
-> *"Crea la interfaz de usuario (UI) para una aplicación web B2B de [Industria]. Se llama [Nombre de la empresa]. Utiliza colores basados en el logotipo generado previamente (ej. Azul corporativo y blanco). Necesito construir una vista principal que sea un 'Dashboard' limpio. Debe tener: Un menú lateral, un panel central donde el usuario interactúe con nuestra IA, y tarjetas (cards) superiores mostrando 3 métricas clave de ahorro de tiempo y costos. Estilo minimalista y ejecutivo."*
+> *"Crea la interfaz de usuario (UI) para una aplicación web B2B de servicio de alquiler de cabras. Se llama [Agreguen su nombre]. Necesito construir una vista principal que sea un 'Dashboard' limpio. Debe tener: Un menú lateral, un panel central donde el usuario interactúe con nuestra IA, y tarjetas (cards) superiores mostrando 3 métricas clave de ahorro de tiempo y costos. Estilo minimalista y ejecutivo."*
+
+> **Adjuntar:**
+> *Adjunten algunas imagenes generadas por Pomelli para el proyecto, si no han generado imagenes, devuelvanse a pomelli y generen algunas*
+
+![Screenshot](./imagenes/stitch1.png)
+
 
 3. **Iteración:** La herramienta generará la vista. Ustedes pueden seguir escribiéndole en el chat (Ej. *"Cambia el color de la barra lateral a negro"*, *"Agrega un botón de exportar reporte"*) hasta que luzca como un producto real que estarían dispuestos a comprar.
 
-> `[Espacio para imagen: Captura de pantalla de Google Stitch mostrando el panel de chat a un lado y la interfaz generada en el centro]`
+![Screenshot](./imagenes/stitch2.png)
+
+4. **Exportar:** Stitch nos permite exportar directo a AI Studio para generar nuestro prototipo, para eso simplemente en la parte superior derecha damos clic en la opción de Export
+
+![Screenshot](./imagenes/boton-export.png)
+
+Y finalmente damos clic en el botón Build with AI Studio
+
+![Screenshot](./imagenes/boton-build.png)
 
 ---
 
@@ -170,7 +208,7 @@ Finalmente, vamos a construir la aplicación funcional completa usando la funci�
 
 > **Prompt (Copiar y Pegar):**
 > *"Construye una aplicación web funcional para mi empresa B2B llamada [Nombre de la empresa].
-> 1. UI/UX: La paleta de colores debe ser [Insertar colores de Pomelli]. La interfaz debe incluir un panel lateral de navegación y un área central principal. En la parte superior, muestra un dashboard simulado con métricas de [Mencionar métricas de Stitch].
+> 1. UI/UX: La paleta de colores debe ser de acuerdo al diseño compartido. La interfaz debe incluir un panel lateral de navegación y un área central principal. En la parte superior, muestra un dashboard simulado con métricas.
 > 2. Funcionalidad Core: En el centro de la pantalla, debe haber un chat o formulario donde el usuario exponga un problema sobre [Mencionar el problema validado en la Fase 3].
 > 3. Lógica de IA (System Instructions): Tú eres el motor central de la app. Cuando el usuario ingrese datos, debes procesarlos y responder SIEMPRE con este formato estricto: Una línea de diagnóstico rápido, tres viñetas con acciones recomendadas basadas en las mejores prácticas de la industria, y una métrica de impacto esperado. Tu tono es netamente ejecutivo y resolutivo."*
 > 
@@ -179,7 +217,7 @@ Finalmente, vamos a construir la aplicación funcional completa usando la funci�
 3. Hagan clic en **Generar / Desplegar**. La IA escribirá el código, estructurará la interfaz y desplegará el MVP funcional.
 4. **Prueba en Vivo:** Interactúen con su nueva aplicación y demuestren cómo su producto da una respuesta estratégica inmediata.
 
-> `[Espacio para imagen: Captura de pantalla de Google AI Studio utilizando la función Build, mostrando el área de testeo de la app]`
+![Screenshot](./imagenes/ai-studio.png)
 
 ---
 
@@ -202,5 +240,3 @@ Tienen el negocio, la marca y el producto. Ahora, la IA creará su video de pres
 
 5. Hagan clic en **Generar**. La herramienta procesará todos los documentos y estructurará el video final de su startup.
 6. **Entregable Final:** Descarguen y presenten el video. Este será su recurso principal para el "Pitch" ante el resto de los participantes.
-
-> `[Espacio para imagen: Captura de pantalla de NotebookLM resaltando la opción de Generación de Videos y el panel donde se ingresan las instrucciones para el video]`
